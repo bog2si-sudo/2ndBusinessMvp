@@ -13,13 +13,96 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Bogdan David",
-  "url": "https://bogdandavid.one/",
-  "image": "https://bogdandavid.one/og-image.jpg",
-  "jobTitle": "Business Consultant",
-  "description": "Practical support for stalled initiatives, measurable AI value and business improvement opportunities.",
-  "sameAs": []
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://bogdandavid.one/#website",
+      "url": "https://bogdandavid.one/",
+      "name": "Bogdan David | Execution and performance",
+      "description": "Practical support for stalled initiatives, measurable AI value and business improvement opportunities."
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://bogdandavid.one/#profilepage",
+      "url": "https://bogdandavid.one/",
+      "name": "Bogdan David | Execution and performance",
+      "isPartOf": { "@id": "https://bogdandavid.one/#website" },
+      "about": { "@id": "https://bogdandavid.one/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://bogdandavid.one/#person",
+      "name": "Bogdan David",
+      "url": "https://bogdandavid.one/",
+      "image": "https://bogdandavid.one/bogdan-david.JPG",
+      "jobTitle": "Delivery mechanic",
+      "description": "Practical support for stalled initiatives, measurable AI value and business improvement opportunities.",
+      "homeLocation": {
+        "@type": "Country",
+        "name": "Romania"
+      },
+      "knowsAbout": [
+        "Business operations",
+        "AI value assessment",
+        "Execution management",
+        "Operational efficiency",
+        "Profit leak diagnosis",
+        "Sell-side readiness"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/bogdandavid/"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "The 10-Day Profit Leak Audit",
+          "description": "Find the single highest-value fix in your business in 10 working days.",
+          "url": "https://bogdandavid.one/#business-value",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "900",
+            "maxPrice": "1500",
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "AI opportunity screening",
+          "description": "Find where AI can create measurable business value before investing in tools or implementation.",
+          "url": "https://bogdandavid.one/#ai-value",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "1500",
+            "maxPrice": "2500",
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Execution reset",
+          "description": "Get a stalled priority moving again with clear diagnosis, reset priorities and a 90-day execution plan.",
+          "url": "https://bogdandavid.one/#execution-reset",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "2000",
+            "maxPrice": "3500",
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Sell side readiness",
+          "description": "Find the operational risks that could weaken valuation or negotiation before a sale or investment process.",
+          "url": "https://bogdandavid.one/#sell-side-readiness",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "1500",
+            "priceCurrency": "EUR"
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
 <style>
